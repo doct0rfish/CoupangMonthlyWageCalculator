@@ -18,6 +18,12 @@
 
 소득세는 이번 달 지급 합계 × (지난달 소득세 ÷ 지난달 지급 합계) × 원천징수 비율로 계산합니다. 실제 원천징수액은 부양가족, 자녀, 비과세 항목, 상여 처리 등에 따라 달라질 수 있습니다.
 
-## 배포
+## GitHub Pages 배포
 
-GitHub Pages에서 이 저장소의 루트 브랜치를 배포 대상으로 설정하면 됩니다.
+이 저장소에는 GitHub Pages 배포 워크플로가 포함되어 있습니다.
+
+1. 이 폴더를 새 GitHub 저장소에 푸시합니다. 기본 브랜치 이름은 `main`이어야 합니다.
+2. GitHub 저장소의 **Settings → Pages → Build and deployment**에서 Source를 **GitHub Actions**로 선택합니다.
+3. `main` 브랜치에 푸시하면 자동 배포됩니다. 배포 주소는 Actions 실행 결과의 **Deploy to GitHub Pages** 단계에서 확인할 수 있습니다.
+
+별도 서버나 빌드 과정은 필요 없습니다. `index.html`이 GitHub Pages의 첫 화면으로 제공됩니다.
